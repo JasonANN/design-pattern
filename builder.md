@@ -115,15 +115,15 @@ print_r($director->build(new cokeBuilder));
 
 #適用場景
 
-1、Product需具有複雜的內部結構。
-2、需要生成的Product對象的屬性相互依賴，builder pattern可以強迫生成順序。
-3、在對象創建過程中會使用到系統中的一些其它對象，這些對像在產品對象的創建過程中不易得到。
+* Product需具有複雜的內部結構。
+* 需要生成的Product對象的屬性相互依賴，builder pattern可以強迫生成順序。
+* 在對象創建過程中會使用到系統中的一些其它對象，這些對像在產品對象的創建過程中不易得到。
 
 #使用效果
 
-1、builder pattern使得產品的內部表象可以獨立的變化。builder pattern可以使客戶端不必知道產品內部組成的細節。
-2、每一個Builder都相對獨立，而與其它的Builder無關。
-3、模式所建造的最終產品更易於控制。
+*、builder pattern使得產品的內部表象可以獨立的變化。builder pattern可以使客戶端不必知道產品內部組成的細節。
+*、每一個Builder都相對獨立，而與其它的Builder無關。
+*、模式所建造的最終產品更易於控制。
 
 
 #優點
