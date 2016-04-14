@@ -3,8 +3,10 @@
 
 # 目的
 
->Separate the construction of a complex object from its representation so thatthe same construction process can create different representations.Parse a complex representation, create one of several targets.
->分散一個複雜結構的物件，使相同的構建過程可以建立不同的樣式。解析複雜的表示，創建幾個目標之一。
+> Separate the construction of a complex object from its representation so thatthe same construction process can create different representations.Parse a complex representation, create one of several targets.
+
+> 分散一個複雜結構的物件，使相同的構建過程可以建立不同的樣式。解析複雜的表示，創建幾個目標之一。
+
 > Ref: [Builder Design Pattern](https://sourcemaking.com/design_patterns/builder)
 
 
@@ -121,9 +123,9 @@ print_r($director->build(new cokeBuilder));
 
 #使用效果
 
-*、builder pattern使得產品的內部表象可以獨立的變化。builder pattern可以使客戶端不必知道產品內部組成的細節。
-*、每一個Builder都相對獨立，而與其它的Builder無關。
-*、模式所建造的最終產品更易於控制。
+* builder pattern使得產品的內部表象可以獨立的變化。builder pattern可以使客戶端不必知道產品內部組成的細節。
+* 每一個Builder都相對獨立，而與其它的Builder無關。
+* 模式所建造的最終產品更易於控制。
 
 
 #優點
