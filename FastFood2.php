@@ -2,24 +2,8 @@
 
 class Product
 {
-    private $_name;
-    private $_account;
-
-    public function __construct()
-    {
-        $this->_name = null;
-        $this->_account = 0;
-    }
-
-    public function addFood($food)
-    {
-        $this->_name = $food;
-    }
-
-    public function addAccount($account)
-    {
-        $this->_account = $this->_account + $account;
-    }
+    public $_name;
+    public $_account;
 }
 
 abstract class foodBuilder
@@ -45,12 +29,12 @@ class hamburgerBuilder extends  foodBuilder
 
     public function setMeal()
     {
-        $this->_product->addFood($this->_food);
+        $this->_product->_name = $this->_food;
     }
 
     public function setAccount()
     {
-        $this->_product->addAccount($this->_account);
+        $this->_product->_account = $this->_account;
     }
 
     public function getResult()
@@ -66,12 +50,12 @@ class cokeBuilder extends foodBuilder
 
     public function setMeal()
     {
-        $this->_product->addFood($this->_food);
+        $this->_product->_name = $this->_food;
     }
 
     public function setAccount()
     {
-        $this->_product->addAccount($this->_account);
+        $this->_product->_account = $this->_account;
     }
 
     public function getResult()
